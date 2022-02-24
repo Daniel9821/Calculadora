@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora<span>&reg;</span></h1>
+    <main class="calculadora">
+        <div class="display">
+            <button type="button" class="button limpar" onclick="clearAll()">Limpar</button>
+            <input value="" type="text" name="display" id="display" disabled />
+        </div>
+        <div class="buttons">
+            <section class="primeiro">
+                <button class="button" value="7" onclick="showDisplay(7)">7</button>
+                <button class="button" value="8" onclick="showDisplay(8)">8</button>
+                <button class="button" value="9" onclick="showDisplay(9)">9</button>
+                <button class="button" value="+" onclick="showDisplay('+')">+</button>
+            </section>
+            <section class="segundo">
+                <button class="button" value="4" onclick="showDisplay(4)">4</button>
+                <button class="button" value="5" onclick="showDisplay(5)">5</button>
+                <button class="button" value="6" onclick="showDisplay(6)">6</button>
+                <button class="button" value="-" onclick="showDisplay('-')">-</button>
+            </section>
+            <section class="terceiro">
+                <button class="button" value="1" onclick="showDisplay(1)">1</button>
+                <button class="button" value="2" onclick="showDisplay(2)">2</button>
+                <button class="button" value="3" onclick="showDisplay(3)">3</button>
+                <button class="button" value="*" onclick="showDisplay('*')">*</button>
+            </section>
+            <section class="quarto">
+                <button class="button" value="0" onclick="showDisplay(0)">0</button>
+                <button class="button" value="." onclick="showDisplay('.')">.</button>
+                <button class="button" value="/" onclick="showDisplay('/')">/</button>
+                <button class="button iqual" value="=" onclick="resultado()">=</button>
+            </section>
+        </div>       
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
